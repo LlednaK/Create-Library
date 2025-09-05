@@ -15,6 +15,7 @@ import com.petrolpark.core.team.packet.BindTeamItemPacket;
 import com.petrolpark.core.team.scoreboard.ScoreboardTeamComponentChangedPacket;
 import com.petrolpark.core.team.singleplayer.SinglePlayerTeamComponentChangedPacket;
 
+import com.petrolpark.imaginaryregion.CreateImaginaryRegionPacket;
 import net.createmod.catnip.net.base.BasePacketPayload;
 import net.createmod.catnip.net.base.CatnipPacketRegistry;
 import net.minecraft.network.RegistryFriendlyByteBuf;
@@ -36,7 +37,8 @@ public enum PetrolparkPackets implements BasePacketPayload.PacketTypeProvider, I
 	REMOVE_SHADER(RemoveEffectShaderPacket.class, RemoveEffectShaderPacket.STREAM_CODEC, false),
 	SYNC_MOB_EFFECT_TOTAL_DURATION(SyncMobEffectTotalDurationPacket.class, SyncMobEffectTotalDurationPacket.STREAM_CODEC, false),
 	REMOVE_ALL_EFFECT_SHADERS(RemoveAllEffectShadersPacket.class, RemoveAllEffectShadersPacket.STREAM_CODEC, false),
-	INIT_SHADER(InitEffectShaderPacket.class, InitEffectShaderPacket.STREAM_CODEC, false)
+	INIT_SHADER(InitEffectShaderPacket.class, InitEffectShaderPacket.STREAM_CODEC, false),
+	CREATE_REGION(CreateImaginaryRegionPacket.class, CreateImaginaryRegionPacket.STREAM_CODEC, false)
 	;
 
     private final CatnipPacketRegistry.PacketType<?> type;

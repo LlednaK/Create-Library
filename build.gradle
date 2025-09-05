@@ -102,7 +102,7 @@ repositories {
     maven { url = "https://mvn.devos.one/snapshots" } // Registrate
     maven { url = "https://raw.githubusercontent.com/Fuzss/modresources/main/maven/" } // ForgeConfigAPIPort
     maven { url = "https://maven.blamejared.com" } // JEI
-    maven { url = "https://maven.theillusivec4.top/" } // Curios
+    maven { url = "https://modmaven.dev/" } // Curios
     exclusiveContent { // Destroy and Petrol's Parts
         forRepository {
             maven {

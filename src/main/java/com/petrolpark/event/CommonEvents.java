@@ -9,6 +9,7 @@ import com.petrolpark.core.contamination.ContaminateHeldItemCommand;
 import com.petrolpark.core.contamination.ItemContamination;
 import com.petrolpark.core.item.decay.ItemDecay;
 import com.petrolpark.core.recipe.bogglepattern.BogglePatternCommand;
+import com.petrolpark.imaginaryregion.ImaginaryRegionCommand;
 import com.petrolpark.util.mixininterfaces.IGameRendererMixin;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.Holder;
@@ -44,6 +45,7 @@ public class CommonEvents {
     public static void registerCommands(RegisterCommandsEvent event) {
         ContaminateHeldItemCommand.register(event.getDispatcher(), event.getBuildContext());
         BogglePatternCommand.register(event.getDispatcher(), event.getBuildContext());
+        ImaginaryRegionCommand.register(event.getDispatcher(), event.getBuildContext());
     };
 
     @SubscribeEvent
